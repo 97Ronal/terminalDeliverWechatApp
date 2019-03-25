@@ -1,0 +1,12 @@
+{
+	"client": "client/",
+	"svr": "server/",
+	"miniprogramRoot": "client/",
+	"qcloudRoot": "server/",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wx569d84cb5d590c53",
+	"projectname": "terminalDeliveryWechatApp",
+	"condition": {}
+}
