@@ -1,0 +1,46 @@
+<!--client/pages/person/person.wxml-->
+<view class='main-container'>
+
+  <view class='top-container flex-column'>
+    <view class='person-title flex-row'>
+      <view class='person-avatar'>
+        <icon class='iconfont icon-morentouxiang'></icon>
+      </view>
+      <view class='person-baseinfo'>
+        <view class='person-baseinfo-name'>{{userName}}</view>
+        <view class='person-baseinfo-subtitle'>一共配送了{{totalPackageNum}}件快递</view>
+      </view>
+      <view class='person-setting flex-column'>
+        <icon class='iconfont icon-shezhi-xianxing'></icon>
+        <text>设置</text>
+      </view>
+    </view>
+
+    <view class='order-tips flex-row'>
+      <icon type="info"></icon>
+      <view class='order-tips-word'>有{{waitCollectNum}}个快件待揽件哦~</view>
+      <view class='check-collect flex-row'>
+        <text>查看</text>
+        <icon class='iconfont icon-xiayiyeqianjinchakangengduo'></icon>
+      </view>
+    </view>
+  </view>
+
+  <view class='menu'>
+    <view class='menu-item flex-row'>
+      <icon class='iconfont icon-bingtu-xianxing'></icon>
+      <view class='menu-item-title'>个人数据统计</view>
+    </view>
+    <view class='divider'></view>
+    <view class='menu-item flex-row'>
+      <icon class='iconfont icon-daikuan-xianxing'></icon>
+      <view class='menu-item-title'>收入统计</view>
+    </view>
+    <view class='divider'></view>
+    <view class='menu-item flex-row'>
+      <icon class='iconfont icon-ditu'></icon>
+      <view class='menu-item-title'>配送地图一览</view>
+    </view>
+  </view>
+
+</view>

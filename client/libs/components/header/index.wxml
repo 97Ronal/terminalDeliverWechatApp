@@ -1,0 +1,5 @@
+<!--libs/components/header/index.wxml-->
+<view class='component-header'>
+  <icon class='iconfont icon-shangyiyehoutuifanhui'></icon>
+  <slot></slot>
+</view>

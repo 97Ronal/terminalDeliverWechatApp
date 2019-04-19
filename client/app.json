@@ -1,13 +1,58 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/addCgi/addCgi"
+    "pages/addCgi/addCgi",
+    "pages/mapdemo/mapdemo",
+    "pages/person/person",
+    "pages/manage/manage",
+    "pages/addOrder/addOrder",
+    "pages/orderInfo/orderInfo"
   ],
-  "window":{
-    "backgroundColor":"#F6F6F6",
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "Wafer Quick Start",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "myPlugin": {
+      "version": "1.0.6",
+      "provider": "wx5bc2ac602a747594"
+    }
+  },
+  "tabBar": {
+    "color": "#bdbdbd",
+    "selectedColor": "#007AFF",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "libs/tabbar/1.png",
+        "selectedIconPath": "libs/tabbar/1_selected.png"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "text": "管理",
+        "iconPath": "libs/tabbar/2.png",
+        "selectedIconPath": "libs/tabbar/2_selected.png"
+      },
+      {
+        "pagePath": "pages/addOrder/addOrder",
+        "text": "新增",
+        "iconPath": "libs/tabbar/3.png",
+        "selectedIconPath": "libs/tabbar/3_selected.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人",
+        "iconPath": "libs/tabbar/4.png",
+        "selectedIconPath": "libs/tabbar/4_selected.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "header": "/libs/components/header/index"
   }
 }

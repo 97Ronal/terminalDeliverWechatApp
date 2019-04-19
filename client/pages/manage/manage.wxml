@@ -1,0 +1,67 @@
+<!--client/pages/manage/manage.wxml-->
+<view class='header'>
+  <view class='search-header'>
+      <view class='search-input'>
+        <input placeholder="查询订单" placeholder-style='color:#fff'/>
+      </view>
+  </view>
+  <view class='classify-header flex-row'>
+    <view class='calssify-header-item flex-column calssify-header-item-active'>
+      <icon class='iconfont icon-hezuoguanxi'></icon>
+      <text>待接单</text>
+    </view>
+    <view class='calssify-header-item flex-column'>
+      <icon class='iconfont icon-yunshuzhongwuliu'></icon>
+      <text>待配送</text>
+    </view>
+    <view class='calssify-header-item flex-column'>
+      <icon class='iconfont icon-zitigui'></icon>
+      <text>待自提</text>
+    </view>
+    <view class='calssify-header-item flex-column'>
+      <icon class='iconfont icon-shijian'></icon>
+      <text>催单</text>
+    </view>
+    <view class='calssify-header-item flex-column'>
+      <icon class='iconfont icon-mianfei'></icon>
+      <text>退款</text>
+    </view>
+  </view>
+</view>
+
+<view class='main-container'>
+  <view class='order-item' wx:for="{{selectList}}">
+    <view class='item-base'>
+      <text class='item-base-order'>#{{index+1}}</text>
+      <text class='item-base-name'>{{item.name}}{{item.sex=='male'?'先生':'女士'}}</text>
+      <text class='item-base-status'>{{item.status}}</text>
+      <icon class='iconfont icon-dianhua-yuankuang'></icon>
+    </view>
+    <view class='item-address'>
+      <text class='item-address-info'>送货地址：{{item.address}}</text>
+      <text class='item-address-distance'>{{item.distance}}</text>
+      <icon class='iconfont icon-dingwei'></icon>
+    </view>
+    <view class='item-time'>
+      <text class='item-time-title'>送达时间：</text>
+      <text class='item-time-type'>{{item.timeType}}</text>
+      <text class='item-pay-type'>{{item.payType}}</text>
+    </view>
+    <view class='divider'></view>
+    <view class='item-pay'>
+      <text class='item-pay-ifPay'>{{ item.ifPay==true?'客户已支付':'客户未支付'}}</text>
+      <text class='item-pay-price'>{{item.price}}元</text>
+    </view>
+    <view class='divider'></view>
+    <view class='item-info'>
+      <text class='item-info-orderid'>订单编号：{{item.orderId}}</text>
+      <text class='item-info-time'>下单时间：{{item.time}}</text>
+      <text class='item-info-comment'>备注：{{item.comment}}</text>
+    </view>
+    <view class='divider'></view>
+    <view class='item-button'>
+      <view class='abandon-order'>弃单</view>
+      <view class='take-order'>接单</view>
+    </view>
+  </view>
+</view>

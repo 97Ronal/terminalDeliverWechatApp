@@ -8,5 +8,6 @@
 	},
 	"appid": "wx569d84cb5d590c53",
 	"projectname": "terminalDeliveryWechatApp",
+	"compileType": "miniprogram",
 	"condition": {}
 }

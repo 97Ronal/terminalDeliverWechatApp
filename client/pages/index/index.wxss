@@ -5,125 +5,117 @@ page {
     flex-direction: column;
     justify-content: flex-start;
 }
-
-.userinfo, .uploader, .tunnel {
-    margin-top: 40rpx;
-    height: 140rpx;
-    width: 100%;
-    background: #FFF;
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-left: none;
-    border-right: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    transition: all 300ms ease;
+.main-container{
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.search{
+  position: fixed;
+  top: 0;
+  justify-content: space-around;
+  background: #fff;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 10px #b3b3b3;
+}
+.scan{
+  color: #007AFF;
+  font-size: 10px;
+  /* margin-left: 20; */
+}
+.scan i{
+  font-size: 22px;
+}
+.message{
+  color: #007AFF;
+  margin-right: 20px;
+  font-size: 10px;
+}
+.message i{
+  font-size: 22px;
 }
 
-.userinfo-avatar {
-    width: 100rpx;
-    height: 100rpx;
-    margin: 20rpx;
-    border-radius: 50%;
+.search-input{
+  flex-grow: 1;
+  font-size: 14px;
+  margin: 0 10px;
+  border-radius: 20px;
+  background: #dddddd;
+  padding: 0 20px;
 }
 
-.userinfo-nickname {
-    font-size: 32rpx;
-    color: #007AFF;
-    background-color: white; 
+.sending-container{
+  margin-top: 20px;
+  background: #fff;
+  color: #3d3d3d;
+  padding: 20px 0 ;
+}
+.sending-title{
+  padding: 0 20px;
+  font-size: 18px;
+}
+.sending-title icon{
+  margin-right: 10px;
+  font-size: 30px;
+  color: #007AFF;
+  text-shadow: 2px 2px 5px #7eb8f5c2;
+}
+.sending-title-word{
+  flex-grow: 1;
+}
+.time-order{
+  color: #888;
+  font-size:14px;
+}
+.send-list{
+ position: fixed;
+ right: 15px;
+ bottom: 15px;
+ height: 50px; width: 50px;
+ background: #007AFF;
+ box-shadow:  0 0 10px #007AFF;
+ border-radius: 50%;
+}
+.send-list icon{
+  font-size: 20px;
+  color: #fff;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: center;
 }
 
-.userinfo-nickname::after {
-  border: none;
-}
+/** 以下为list item样式**/
 
-.uploader, .tunnel {
-    height: auto;
-    padding: 0 0 0 40rpx;
-    flex-direction: column;
-    align-items: flex-start;
-    box-sizing: border-box;
+.sending-item{
+  margin: 20px;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(178, 178, 178, 0.75);
+  padding: 10px; 
 }
-
-.uploader-text, .tunnel-text {
-    width: 100%;
-    line-height: 52px;
-    font-size: 34rpx;
-    color: #007AFF;
+.item-info{
+  font-size: 14px;
+  /* flex-grow: 1; */
+  width: calc(100% - 60px);
 }
-
-.uploader-container {
-    width: 100%;
-    height: 400rpx;
-    padding: 20rpx 20rpx 20rpx 0;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    box-sizing: border-box;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+.item-info text{
+  display: block;
+  margin: 5px auto;
 }
-
-.uploader-image {
-    width: 100%;
-    height: 360rpx;
+.item-info-base{
+  font-size: 16px;
+  color: #000;
 }
-
-.tunnel {
-    padding: 0 0 0 40rpx;
+.item-info-position{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
 }
-
-.tunnel-text {
-    position: relative;
-    color: #222;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+.item-info-id{
+  color: #bbbbbb;
 }
-
-.tunnel-text:first-child {
-    border-top: none;
-}
-
-.tunnel-switch {
-    position: absolute;
-    right: 20rpx;
-    top: -2rpx;
-}
-
-.disable {
-    color: #888;
-}
-
-.service {
-    position: fixed;
-    right: 40rpx;
-    bottom: 40rpx;
-    width: 140rpx;
-    height: 140rpx;
-    border-radius: 50%;
-    background: linear-gradient(#007AFF, #0063ce);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    transition: all 300ms ease;
-}
-
-.service-button {
-    position: absolute;
-    top: 40rpx;
-}
-
-.service:active {
-    box-shadow: none;
-}
-
-.request-text {
-    padding: 20rpx 0;
-    font-size: 24rpx;
-    line-height: 36rpx;
-    word-break: break-all;
+.item-call icon,.item-toggle icon{
+  color:#007AFF;
+  font-size: 20px;
 }

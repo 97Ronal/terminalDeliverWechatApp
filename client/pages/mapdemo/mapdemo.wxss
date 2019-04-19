@@ -1,0 +1,9 @@
+/* client/pages/mapdemo/mapdemo.wxss */
+.start-suggest{
+  position:fixed;
+  top: 0;
+}
+input{
+  border: none;
+  outline: none;
+}
